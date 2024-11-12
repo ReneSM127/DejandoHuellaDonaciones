@@ -16,21 +16,9 @@ eso es todo aqui en routes, lo siguiente es en la carpeta de controllers
 */
 
 const {
-  renderIndex,
-  renderLogin,
-  renderComprar,
-  renderNewEntry,
-  createNewEntry,
-} = require("../controllers/entries.controller.js");
+  renderIndex
+} = require("../controllers/renderPages.js");
 
 router.get("/", renderIndex);
-
-router.get("/login", renderLogin);
-
-router.get("/comprar", renderComprar);
-
-router.get("/new-entry", renderNewEntry);
-
-router.post("/new-entry", createNewEntry);
 
 module.exports = router;
