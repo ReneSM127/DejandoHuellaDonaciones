@@ -208,7 +208,7 @@ p{
   transition: transform 0.5s, background-color 0.5s;
 }
 
-.hero-especie .btnDona:hover {
+.hero-especie .btnDona:hover{
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
   background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
@@ -226,6 +226,24 @@ p{
   color: black; /* Cambia el color del texto */
 }
 
+.btn-redi,
+.btn-canc{
+  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  padding: 15px;
+  background-color: #FFA500;
+  font-weight: 800;
+  color: white;
+  text-align: center; /* Alinea el texto centrado */
+  transition: transform 0.5s, background-color 0.5s;
+  border-radius: 7%;
+}
+
+.btn-redi:hover,
+.btn-canc:hover{
+  transform: scale(1.1); /* Aumenta el tamaño (zoom) */
+  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  color: black; /* Cambia el color del texto */
+}
 /*---------------------------BOTONES---------------------------*/
 
 
