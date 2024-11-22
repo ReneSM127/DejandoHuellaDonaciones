@@ -1,3 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: white;
+}
+
+hr{
+  border: none;
+}
+
+h2{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #032E42;
+}
+
+p{
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 
 .navbar {
   background-color: #CFF3FF;
@@ -74,14 +98,16 @@
   }
 }
 
+/*---------------------------HERO---------------------------*/
 
-.hero {
+.hero-especie {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   background-image: url('https://dejandohuellascancun.org/wp-content/uploads/2024/07/Hero-scaled.webp');
+  /*background-image: url('https://files.oaiusercontent.com/file-GSHqn5FGfAabaNIKGSODM1Sd?se=2024-11-22T00%3A51%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc02e829c-debb-4ec6-8287-5b067dd469d8.webp&sig=NzZXjXn/K2ujdvubbEz%2BxLFOrO0ki0f4hrMyUEnFbbI%3D');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,49 +115,50 @@
   height: 75vh; /* Ajusta este valor para modificar la altura */
   color: white;
   padding: 20px;
-  margin-top: 1%;
 }
 
-.hero h1 {
+.hero-especie h1 {
   font-size: 3rem;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero p {
+.hero-especie p {
   font-size: 1.2rem;
   margin: 20px 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-.hero button {
-  z-index: 1; /* Asegura que el texto esté sobre la imagen */
-  position: relative;
-  width: 15%;
-  padding: 10px 50px;
-  background-color: #FFA500;
-  margin-bottom: 5%;
-  text-align: center; /* Alinea el texto centrado */
-  display: inline-block; /* Asegura que se comporte como un elemento inline-block */
-  transition: transform 0.3s, background-color 0.3s;
+/*---------------------------lista---------------------------*/
+.lista{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.hero button:hover {
-  transform: scale(1.1); /* Aumenta el tamaño (zoom) */
-  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
-  color: black; /* Cambia el color del texto */
+/*---------------------------donadores---------------------------*/
+.donadores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
+
+
 
 @media (max-width: 768px) {
-  .hero h1 {
+  .hero-especie h1 {
       font-size: 2.5rem;
   }
   
-  .hero p {
+  .hero-especie p {
       font-size: 1rem;
   }
   
-  .hero button {
+  .hero-especie .btnDona {
       font-size: 0.9rem;
       text-align: center;
       width: 40%; /* Ajusta el ancho para pantallas medianas */
@@ -140,15 +167,15 @@
 }
 
 @media (max-width: 480px) {
-  .hero h1 {
+  .hero-especie h1 {
       font-size: 2rem;
   }
   
-  .hero p {
+  .hero-especie p {
       font-size: 0.9rem;
   }
 
-  .hero button {
+  .hero-especie .btnDona {
     width: 60%; /* Ajusta el ancho para pantallas pequeñas */
     padding: 10px 3%; /* Reduce más el padding */
   }
@@ -156,13 +183,8 @@
 }
 
 
-.container h1 {
-  z-index: 1; /* Asegura que el texto esté sobre la imagen */
-  position: relative;
-  text-align: center;
-  font-size: 120px;
-  color: rgb(26, 24, 24);
-}
+/*---------------------------BOTONES---------------------------*/
+
 
 .btn{
   z-index: 1; /* Asegura que el texto esté sobre la imagen */
@@ -173,10 +195,29 @@
   margin-bottom: 5%;
 }
 
+.btnDona {
+  z-index: 1; /* Asegura que el texto esté sobre la imagen Archivo*/
+  position: relative;
+  text-decoration: none;
+  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  padding: 15px;
+  background-color: #FFA500;
+  font-weight: 800;
+  color: white;
+  text-align: center; /* Alinea el texto centrado */
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.hero-especie .btnDona:hover {
+  transform: scale(1.1); /* Aumenta el tamaño (zoom) */
+  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  color: black; /* Cambia el color del texto */
+}
+
 .btn-primary {
-  font-family: 'Roboto', sans-serif; /* Aplica la fuente */
-  font-weight: 400;
-  transition: transform 0.3s, background-color 0.3s;
+  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  font-weight: 800;
+  transition: transform 0.5s, background-color 0.5s;
 }
 
 .btn-primary:hover {
@@ -185,17 +226,16 @@
   color: black; /* Cambia el color del texto */
 }
 
+/*---------------------------BOTONES---------------------------*/
 
-b{
-  color: red;
-  text-decoration: underline;
-}
 
-.call-to-action {
+.lista-necesidades {
   text-align: center;
   background-color: #f0f0f0;
   padding: 30px;
 }
+
+/*---------------------------CARRUSEL---------------------------*/
 
 .col1{
   text-align: justify;
