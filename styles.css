@@ -17,6 +17,31 @@ h2{
   color: #032E42;
 }
 
+h3{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #032E42;
+  margin-left: 3%;
+}
+
+.titulotarjetas{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #032E42;
+  text-align: left;
+  margin-left: 3%;
+}
+
+.textotarjetas{
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin: 3%;
+}
 p{
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
@@ -220,6 +245,26 @@ p{
   transition: transform 0.5s, background-color 0.5s;
 }
 
+.btn-donar{
+  position: relative;
+  border-style: none;
+  border-radius: 5%;
+  width: 200px;
+  height: 40px;
+  bottom: 3%;
+  left: 3%;
+  background-color: #FFA500;
+  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  color: white;
+  font-weight: 700;
+  transition: transform 0.5s, background-color 0.5s;
+}
+.btn-donar:hover{
+  transform: scale(1.1); /* Aumenta el tamaño (zoom) */
+  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  color: black; /* Cambia el color del texto */
+}
+
 .btn-primary:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
   background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
@@ -267,8 +312,8 @@ p{
 }
 
 .card {
-  height: 100%;
-  align-items: center;
+  position: relative;
+  padding-bottom: 3%;
 }
 
 .carousel-inner img {
@@ -283,7 +328,7 @@ p{
 
 .card img {
   max-width: 100%;
-  height: auto;
+  max-height: 180px;
 }
 
 .carousel img {
@@ -293,5 +338,39 @@ p{
 }
 
 .cfinal img{
-  height: 500px;
+  height: 600px;
+}
+
+.d-block{
+  padding: 3%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 imágenes por fila */
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.2); /* Efecto zoom */
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 por fila en móviles */
+  }
 }
