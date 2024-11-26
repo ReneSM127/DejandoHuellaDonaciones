@@ -291,3 +291,7 @@ p{
   height: 280px;
   object-fit: cover;
 }
+
+.cfinal img{
+  height: 500px;
+}
