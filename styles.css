@@ -379,3 +379,25 @@ p{
     grid-template-columns: 1fr; /* 1 por fila en móviles */
   }
 }
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: none; /* Oculto al inicio */
+}
+
+#scrollToTop:hover {
+  background-color: #CFF3FF;
+}
+
