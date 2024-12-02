@@ -286,11 +286,15 @@ p{
   border-radius: 7%;
 }
 
-.btn-redi:hover,
-.btn-canc:hover{
+.btn-redi:hover{
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
   background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
+}
+.btn-canc:hover{
+  transform: scale(1.1); /* Aumenta el tamaño (zoom) */
+  background-color: #ff5252; /* Cambia el color de fondo al pasar el mouse */
+  color: rgb(255, 255, 255); /* Cambia el color del texto */
 }
 /*---------------------------BOTONES---------------------------*/
 
