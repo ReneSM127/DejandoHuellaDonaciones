@@ -2,40 +2,40 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: white;
 }
 
-hr{
+hr {
   border: none;
 }
 
-h2{
-  font-family: 'Work Sans', sans-serif;
+h2 {
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 3rem;
-  color: #032E42;
+  color: #032e42;
   margin-left: 3%;
   text-align: left;
 }
 
-h3{
-  font-family: 'Work Sans', sans-serif;
+h3 {
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  color: #032E42;
+  color: #032e42;
   margin-left: 3%;
 }
 
-.titulotarjetas{
-  font-family: 'Work Sans', sans-serif;
+.titulotarjetas {
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  color: #032E42;
+  color: #032e42;
   text-align: left;
 }
 
-.textotarjetas{
+.textotarjetas {
   color: #000000;
   font-family: "Roboto", Sans-serif;
   font-size: 14px;
@@ -43,25 +43,25 @@ h3{
   text-align: left;
   margin: 3%;
 }
-p{
+p {
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: justify;
   margin-right: 3%;
   margin-left: 3%;
 }
 
-.textofinal{
+.textofinal {
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: left;
   margin-left: 3%;
 }
 
 .navbar {
-  background-color: #CFF3FF;
+  background-color: #cff3ff;
   height: 80px;
   padding: 0.5rem;
 }
@@ -95,20 +95,20 @@ p{
 }
 
 .nav-link.active {
-  color: #E74899 !important;
+  color: #e74899 !important;
 }
 
 .offcanvas-body {
-  background-color: #CFF3FF;
+  background-color: #cff3ff;
 }
 
 .offcanvas-header {
-  background-color: #CFF3FF;
+  background-color: #cff3ff;
 }
 
 .nav-link:hover,
 .nav-link.active:hover {
-  color: #E74899;
+  color: #e74899;
 }
 
 @media (min-width: 991px) {
@@ -134,7 +134,7 @@ p{
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: url('https://dejandohuellascancun.org/wp-content/uploads/2024/07/Hero-scaled.webp');
+  background-image: url("https://dejandohuellascancun.org/wp-content/uploads/2024/07/Hero-scaled.webp");
   /*background-image: url('https://files.oaiusercontent.com/file-GSHqn5FGfAabaNIKGSODM1Sd?se=2024-11-22T00%3A51%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc02e829c-debb-4ec6-8287-5b067dd469d8.webp&sig=NzZXjXn/K2ujdvubbEz%2BxLFOrO0ki0f4hrMyUEnFbbI%3D');*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ p{
 }
 
 /*---------------------------lista---------------------------*/
-.lista{
+.lista {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +167,7 @@ p{
 }
 
 /*---------------------------donadores---------------------------*/
-.donadores{
+.donadores {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,51 +175,46 @@ p{
   text-align: center;
 }
 
-
-
 @media (max-width: 768px) {
   .hero-especie h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-  
+
   .hero-especie p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
-  
+
   .hero-especie .btnDona {
-      font-size: 0.9rem;
-      text-align: center;
-      width: 40%; /* Ajusta el ancho para pantallas medianas */
-      padding: 12px 4%; /* Reduce el padding */
+    font-size: 0.9rem;
+    text-align: center;
+    width: 40%; /* Ajusta el ancho para pantallas medianas */
+    padding: 12px 4%; /* Reduce el padding */
   }
 }
 
 @media (max-width: 480px) {
   .hero-especie h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
-  
+
   .hero-especie p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .hero-especie .btnDona {
     width: 60%; /* Ajusta el ancho para pantallas pequeñas */
     padding: 10px 3%; /* Reduce más el padding */
   }
-
 }
-
 
 /*---------------------------BOTONES---------------------------*/
 
-
-.btn{
+.btn {
   z-index: 1; /* Asegura que el texto esté sobre la imagen */
   position: relative;
   width: 75%;
   padding: 15px 70px;
-  background-color: #FFA500;
+  background-color: #ffa500;
   margin-bottom: 5%;
 }
 
@@ -227,28 +222,28 @@ p{
   z-index: 1; /* Asegura que el texto esté sobre la imagen Archivo*/
   position: relative;
   text-decoration: none;
-  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  font-family: "Archivo", sans-serif; /* Aplica la fuente */
   padding: 15px;
-  background-color: #FFA500;
+  background-color: #ffa500;
   font-weight: 800;
   color: white;
   text-align: center; /* Alinea el texto centrado */
   transition: transform 0.5s, background-color 0.5s;
 }
 
-.hero-especie .btnDona:hover{
+.hero-especie .btnDona:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
-  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #cff3ff; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
 }
 
 .btn-primary {
-  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  font-family: "Archivo", sans-serif; /* Aplica la fuente */
   font-weight: 800;
   transition: transform 0.5s, background-color 0.5s;
 }
 
-.btn-donar{
+.btn-donar {
   position: relative;
   border-style: none;
   border-radius: 5%;
@@ -256,29 +251,29 @@ p{
   height: 40px;
   bottom: 5%;
   left: 5%;
-  background-color: #FFA500;
-  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+  background-color: #ffa500;
+  font-family: "Archivo", sans-serif; /* Aplica la fuente */
   color: white;
   font-weight: 700;
   transition: transform 0.5s, background-color 0.5s;
 }
-.btn-donar:hover{
+.btn-donar:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
-  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #cff3ff; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
 }
 
 .btn-primary:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
-  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #cff3ff; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
 }
 
 .btn-redi,
-.btn-canc{
-  font-family: 'Archivo', sans-serif; /* Aplica la fuente */
+.btn-canc {
+  font-family: "Archivo", sans-serif; /* Aplica la fuente */
   padding: 15px;
-  background-color: #FFA500;
+  background-color: #ffa500;
   font-weight: 800;
   color: white;
   text-align: center; /* Alinea el texto centrado */
@@ -286,18 +281,17 @@ p{
   border-radius: 7%;
 }
 
-.btn-redi:hover{
+.btn-redi:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
-  background-color: #CFF3FF; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #cff3ff; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
 }
-.btn-canc:hover{
+.btn-canc:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
   background-color: #ff5252; /* Cambia el color de fondo al pasar el mouse */
   color: rgb(255, 255, 255); /* Cambia el color del texto */
 }
 /*---------------------------BOTONES---------------------------*/
-
 
 .lista-necesidades {
   text-align: center;
@@ -307,14 +301,14 @@ p{
 
 /*---------------------------CARRUSEL---------------------------*/
 
-.col1{
+.col1 {
   text-align: justify;
   color: #000000;
   font-family: "Roboto", Sans-serif;
   font-size: 15px;
 }
 
-.col2 a{
+.col2 a {
   display: block;
 }
 
@@ -344,11 +338,11 @@ p{
   object-fit: cover;
 }
 
-.cfinal img{
+.cfinal img {
   height: 600px;
 }
 
-.d-block{
+.d-block {
   padding: 3%;
 }
 
@@ -374,7 +368,10 @@ p{
 
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 por fila en pantallas pequeñas */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 por fila en pantallas pequeñas */
   }
 }
 
@@ -393,7 +390,7 @@ p{
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #FFA500;
+  background-color: #ffa500;
   color: white;
   border: none;
   border-radius: 50%;
@@ -402,6 +399,5 @@ p{
 }
 
 #scrollToTop:hover {
-  background-color: #CFF3FF;
+  background-color: #cff3ff;
 }
-

@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dejando Huellas por Cancun</title>
 
-    <link rel="icon" href="https://dejandohuellascancun.org/wp-content/uploads/2024/06/cropped-favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" href="https://dejandohuellascancun.org/wp-content/uploads/2024/06/cropped-favicon-192x192.png" sizes="192x192" />
+    <link
+      rel="icon"
+      href="https://dejandohuellascancun.org/wp-content/uploads/2024/06/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://dejandohuellascancun.org/wp-content/uploads/2024/06/cropped-favicon-192x192.png"
+      sizes="192x192"
+    />
 
     <!-- Estilos de Bootstrap 5 -->
     <link
@@ -394,12 +402,12 @@
             <button
               type="button"
               class="btn-canc"
-              id="btnContinuar"
               data-bs-dismiss="modal"
             >
               CANCELAR
             </button>
-            <button type="button" class="btn-redi" data-bs-dismiss="modal">
+            <button type="button" class="btn-redi" data-bs-dismiss="modal" id="btnContinuar"
+            >
               CONTINUAR
             </button>
           </div>
@@ -467,16 +475,17 @@
           };
         });
       });
-      
+
       const scrollToTopButton = document.getElementById("scrollToTop");
 
-        window.addEventListener("scroll", () => {
-          scrollToTopButton.style.display = window.scrollY > 200 ? "block" : "none";
-        });
+      window.addEventListener("scroll", () => {
+        scrollToTopButton.style.display =
+          window.scrollY > 200 ? "block" : "none";
+      });
 
-        scrollToTopButton.addEventListener("click", () => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+      scrollToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
     </script>
   </body>
 </html>
