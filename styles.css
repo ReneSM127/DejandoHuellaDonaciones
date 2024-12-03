@@ -286,9 +286,10 @@ p {
   background-color: #cff3ff; /* Cambia el color de fondo al pasar el mouse */
   color: black; /* Cambia el color del texto */
 }
+
 .btn-canc:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
-  background-color: #ff5252; /* Cambia el color de fondo al pasar el mouse */
+  background-color: red; /* Cambia el color de fondo al pasar el mouse */
   color: rgb(255, 255, 255); /* Cambia el color del texto */
 }
 /*---------------------------BOTONES---------------------------*/
@@ -379,25 +380,4 @@ p {
   .gallery {
     grid-template-columns: 1fr; /* 1 por fila en móviles */
   }
-}
-
-#scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  width: 60px;
-  height: 60px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #ffa500;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  display: none; /* Oculto al inicio */
-}
-
-#scrollToTop:hover {
-  background-color: #cff3ff;
 }
