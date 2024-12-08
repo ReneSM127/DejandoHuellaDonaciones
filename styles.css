@@ -130,11 +130,11 @@ p {
 
 .hero-especie {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  background-image: url("https://dejandohuellascancun.org/wp-content/uploads/2024/07/Hero-scaled.webp");
+  text-align: left;
+  background-image: url("Donaciones.jpg");
   /*background-image: url('https://files.oaiusercontent.com/file-GSHqn5FGfAabaNIKGSODM1Sd?se=2024-11-22T00%3A51%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc02e829c-debb-4ec6-8287-5b067dd469d8.webp&sig=NzZXjXn/K2ujdvubbEz%2BxLFOrO0ki0f4hrMyUEnFbbI%3D');*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@ p {
   width: 100%;
   height: 75vh; /* Ajusta este valor para modificar la altura */
   color: white;
-  padding: 20px;
+  padding: 20px 10%;
 }
 
 .hero-especie h1 {
@@ -221,6 +221,7 @@ p {
 .btnDona {
   z-index: 1; /* Asegura que el texto esté sobre la imagen Archivo*/
   position: relative;
+  width: 25%;
   text-decoration: none;
   font-family: "Archivo", sans-serif; /* Aplica la fuente */
   padding: 15px;
@@ -249,7 +250,7 @@ p {
   border-radius: 5%;
   width: 200px;
   height: 40px;
-  bottom: 5%;
+  bottom: 0%;
   left: 5%;
   background-color: #ffa500;
   font-family: "Archivo", sans-serif; /* Aplica la fuente */
@@ -273,6 +274,7 @@ p {
 .btn-canc {
   font-family: "Archivo", sans-serif; /* Aplica la fuente */
   padding: 15px;
+  border-style: none;
   background-color: #ffa500;
   font-weight: 800;
   color: white;
@@ -316,6 +318,8 @@ p {
 .card {
   position: relative;
   padding-bottom: 3%;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .carousel-inner img {
