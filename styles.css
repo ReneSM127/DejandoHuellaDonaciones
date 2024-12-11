@@ -134,7 +134,7 @@ p {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  background-image: url("Donaciones.jpg");
+  background-image: url("./Donaciones.jpg");
   /*background-image: url('https://files.oaiusercontent.com/file-GSHqn5FGfAabaNIKGSODM1Sd?se=2024-11-22T00%3A51%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc02e829c-debb-4ec6-8287-5b067dd469d8.webp&sig=NzZXjXn/K2ujdvubbEz%2BxLFOrO0ki0f4hrMyUEnFbbI%3D');*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,7 +282,9 @@ p {
   transition: transform 0.5s, background-color 0.5s;
   border-radius: 7%;
 }
-
+.btn-canc {
+  background-color: rgb(255, 40, 40);
+}
 .btn-redi:hover {
   transform: scale(1.1); /* Aumenta el tamaño (zoom) */
   background-color: #cff3ff; /* Cambia el color de fondo al pasar el mouse */
@@ -384,4 +386,26 @@ p {
   .gallery {
     grid-template-columns: 1fr; /* 1 por fila en móviles */
   }
+}
+
+.links-footer{
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.links-footer:hover{
+  color: #e74899;
+  transition: 0.3s;
+}
+
+.footer-text{
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+i{
+  color: #e74899;
 }
